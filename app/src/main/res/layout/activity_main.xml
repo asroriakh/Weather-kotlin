@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.rori.intermparti.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/tvHariIni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        tools:text="Today, 27 Januari 2018" />
+
+    <TextView
+        android:id="@+id/tvDerajatSuhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        tools:text="23"
+        app:layout_constraintStart_toStartOf="@id/tvHariIni"
+        app:layout_constraintTop_toBottomOf="@id/tvHariIni"/>
+
+    <TextView
+        android:id="@+id/tvKota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        tools:text="Yogyakarta, ID"
+        app:layout_constraintStart_toStartOf="@id/tvDerajatSuhu"
+        app:layout_constraintTop_toBottomOf="@id/tvDerajatSuhu"/>
+
+    <ImageView
+        android:id="@+id/imgStatus"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        tools:src="@drawable/ic_clear"
+        app:layout_constraintBottom_toBottomOf="@id/tvDerajatSuhu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvHariIni"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/imgStatus"
+        app:layout_constraintTop_toBottomOf="@id/imgStatus"
+        tools:text="cerah" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recCuaca"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+    </android.support.v7.widget.RecyclerView>
+</android.support.constraint.ConstraintLayout>
+

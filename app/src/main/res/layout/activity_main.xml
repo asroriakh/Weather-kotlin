@@ -31,7 +31,7 @@
         android:layout_marginTop="6dp"
         android:textColor="@android:color/white"
         android:textSize="40sp"
-        tools:text="23"
+        tools:text="23\u00b0"
         app:layout_constraintStart_toStartOf="@id/tvHariIni"
         app:layout_constraintTop_toBottomOf="@id/tvHariIni"/>
 
